@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(250, 229, 210);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.container {
+  width: 420px;
+  margin: 70px auto;
+  box-shadow: -1px 8px 22px -6px rgba(0, 0, 0, 0.4);
+  border: 2px solid orange;
+  border-radius: 6px;
+}
+
+.todo {
+  border: 1px solid orange;
+  border-radius: 6px;
+  margin: 12px;
+  padding: 12px;
+}
+
+.input {
+  height: 45px;
+  width: 340px;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: -1px 2px 20px -6px rgb(68, 73, 68);
+  border: none;
+  outline: none;
+  padding: 12px;
+}
+
+.addbtn {
+  border: none;
+  font-size: 20px;
+  box-shadow: -1px 2px 20px -6px rgb(68, 73, 68);
+  padding: 0.25em 0.5em;
+  margin-top: 12px;
+  border-radius: 0.25em;
+  cursor: pointer;
+  outline: none;
+  height: 45px;
+  width: 340px;
+}
+
+li {
+  list-style: none;
+}
+
+.newtodo {
+  margin: 16px;
+  border: 1px solid rgb(241, 176, 101);
+  padding: 16px;
+  border-radius: 6px;
+}
+
+span {
+  display: flex;
+  border: 1px solid rgb(240, 189, 122);
+  border-radius: 8px;
+  align-items: center;
+  padding: 4%;
+}
+
+li:has(.checkb:checked) .check-span {
+  text-decoration: line-through;
+}
+
+.action-btn {
+  border: 2px solid #dbdbdb;
+  border-radius: 8px;
+  background: #ecaf09;
+  height: 30px;
+  width: 60px;
+}
+
+.buttons {
+  justify-content: flex-end;
+  gap: 6px;
+}
